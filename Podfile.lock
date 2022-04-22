@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.8.2)
+  - IQKeyboardManagerSwift (6.5.6)
+  - JGProgressHUD (2.0.3)
+  - Kingfisher (6.3.1)
+  - MJRefresh (3.7.2)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.1)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.1)
+  - IQKeyboardManagerSwift
+  - JGProgressHUD (= 2.0.3)
+  - Kingfisher
+  - MJRefresh
+  - SnapKit
+  - SwiftyJSON
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - JGProgressHUD
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+    - SwiftyJSON
+    - YYModel
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  JGProgressHUD: 12b20a8f4ffe05258f8635c1ab92816e451f904d
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 8b76507737fe21c1a33b3bb82c937b2127627978
+
+COCOAPODS: 1.10.1
