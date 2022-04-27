@@ -34,19 +34,22 @@ class FirstVC: BaseViewController, HadTabBarProtocol, NoneNavigationBarProtocol,
         
         return naviBar
     }()
+    
     lazy var naviTitle: UILabel = {
         let naviTitle = UILabel()
         naviTitle.textColor = UIColor.black
         naviTitle.font = UIFont.customFont(name: .RobotoMedium, size: 20)
-        naviTitle.text = "First"
+        naviTitle.text = "FirstC"
         return naviTitle
     }()
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
+        print("hello world")
+        
+        view.backgroundColor = UIColor(hex: "#554433",alpha: 0.5)
         
         view.addSubview(visual)
         view.addSubview(naviBar)
@@ -67,8 +70,29 @@ class FirstVC: BaseViewController, HadTabBarProtocol, NoneNavigationBarProtocol,
             
             print(model.city)
         }
+        
+        //模拟代码
+        let alertButton = UIButton(type: .custom)
+        alertButton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        alertButton.backgroundColor = UIColor.gray
+        self.view.addSubview(alertButton)
+        alertButton.addTarget(self, action: #selector(click), for: UIControl.Event.touchUpInside)
+        
     }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func click(){
+        let model : [AlertShowModel] = [
+            AlertShowModel(iconImage: "Tabbar_Fourth_Normal", title: "Tabbar_Fourth_Normal"),
+            AlertShowModel(iconImage: "Tabbar_Second_Normal", title: "Tabbar_Second_Normal"),
+        ]
+        AlertShowView.setAlertView(superView: self.view, model: model, ensureClick: {item in
+            
+        }, cancelClick: {
+            
+        })
     }
 }
