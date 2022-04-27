@@ -59,7 +59,6 @@ class AlertShowView: UIView {
         btnCoverView = UIView(frame: .zero)
         self.addSubview(btnCoverView)
         
-//        btnCoverView.frame = CGRect(x: 0, y: UIScreen.main.bounds.size.height, width: UIScreen.main.bounds.size.width, height: CGFloat(totalCount*itemHeight))
         btnCoverView.snp.makeConstraints { make in
             make.left.right.equalToSuperview()
             make.bottom.equalToSuperview().offset(totalCount*itemHeight)
@@ -89,14 +88,11 @@ class AlertShowView: UIView {
     
     func popupView(){
         let totalCount = model.count
+        btnCoverView.snp.updateConstraints { make in
+            make.bottom.equalToSuperview().offset(-totalCount*itemHeight)
+        }
         UIView.animate(withDuration: 0.3) { [self] in
-            btnCoverView.snp.updateConstraints { make in
-                make.bottom.equalToSuperview().offset(-totalCount*itemHeight)
-            }
-            btnCoverView.setNeedsLayout()
             btnCoverView.layoutIfNeeded()
-//            btnCoverView.frame = CGRect(x: 0, y: UIScreen.main.bounds.size.height-CGFloat(totalCount*itemHeight)-kTabBarH, width: UIScreen.main.bounds.size.width, height: CGFloat(totalCount*itemHeight))
-
         }
     }
     
