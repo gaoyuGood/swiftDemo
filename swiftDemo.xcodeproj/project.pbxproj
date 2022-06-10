@@ -41,6 +41,7 @@
 		CF5520CC2812C0B100E451EE /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5520CB2812C0B100E451EE /* ThirdVC.swift */; };
 		CF5520CE2812C0CB00E451EE /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5520CD2812C0CB00E451EE /* FourthVC.swift */; };
 		CF5520D02812C0FE00E451EE /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5520CF2812C0FE00E451EE /* FifthVC.swift */; };
+		CFDE75A628539C460022356B /* FifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE75A528539C460022356B /* FifthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		CF5520CB2812C0B100E451EE /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		CF5520CD2812C0CB00E451EE /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		CF5520CF2812C0FE00E451EE /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
+		CFDE75A528539C460022356B /* FifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthView.swift; sourceTree = "<group>"; };
 		D401EBCDB97EF38B666B5987 /* Pods-swiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-swiftDemo/Pods-swiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				CF5520CF2812C0FE00E451EE /* FifthVC.swift */,
+				CF98CF11285345B2002036BE /* FifthView */,
 			);
 			name = "5-Fifth";
 			path = "swiftDemo/Root/5-Fifth";
@@ -283,6 +286,14 @@
 				CF5520B42812B1DD00E451EE /* FirstNetService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CF98CF11285345B2002036BE /* FifthView */ = {
+			isa = PBXGroup;
+			children = (
+				CFDE75A528539C460022356B /* FifthView.swift */,
+			);
+			path = FifthView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				CF5520BC2812B1DD00E451EE /* RequestService.swift in Sources */,
 				CF5520C62812B1DD00E451EE /* RequestItems.swift in Sources */,
 				CF55208E2812934F00E451EE /* NSDate+BPExtension.m in Sources */,
+				CFDE75A628539C460022356B /* FifthView.swift in Sources */,
 				CF5520902812934F00E451EE /* Extension+UIFont.swift in Sources */,
 				CF5520A228129E1900E451EE /* DemoTabBar.swift in Sources */,
 				CF5520CA2812C08800E451EE /* SecondVC.swift in Sources */,

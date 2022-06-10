@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class FifthVC: BaseViewController, HadTabBarProtocol, NoneNavigationBarProtocol, NoneInteractivePopGestureProtocol {
     
@@ -42,11 +43,18 @@ class FifthVC: BaseViewController, HadTabBarProtocol, NoneNavigationBarProtocol,
         return naviTitle
     }()
     
+    private lazy var fifthViewVC: UIViewController = {
+        let fifthViewVC = UIHostingController(rootView: FifthView())
+        fifthViewVC.view.frame = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH-getTabBarHeight())
+        fifthViewVC.view.backgroundColor = UIColor(hex: "#F8F8F8")
+        return fifthViewVC
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(hex: "#F8F8F8")
+        view.addSubview(fifthViewVC.view)
         
         view.addSubview(visual)
         view.addSubview(naviBar)

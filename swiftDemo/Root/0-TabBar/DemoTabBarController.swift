@@ -55,7 +55,6 @@ class DemoTabBarController: BaseTabBarController {
     private lazy var fifthNavC: BaseNavigationController = {
         let fifthNavC = BaseNavigationController(rootViewController: fifthVC)
         fifthNavC.tabBarItem.isEnabled = false
-        fifthVC.view.backgroundColor = UIColor.red
         return fifthNavC
     }()
     
